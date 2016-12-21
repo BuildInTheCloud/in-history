@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{m}}/{{d}} in History</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+
+  <ion-card *ngFor="let event of history; let i = index;">
+    <ion-card-content>
+      <h1>{{yearDisplay(event.date.split("/")[0])}}</h1>
+      <h1>
+        <span class="cat1" *ngIf="showIt(event.category1, event.category1, event.category2)">{{formatIt(event.category1)}}</span>
+        <span class="cat2" *ngIf="showIt(event.category2, event.category1, event.category2)">{{formatIt(event.category2)}}</span>
+      </h1>
+      <p [innerHTML]="formatDesc(event.description)"></p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

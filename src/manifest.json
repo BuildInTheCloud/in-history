@@ -1,0 +1,13 @@
+{
+  "name": "in-history",
+  "short_name": "in-history",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "/assets/images/logo.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#004A7F",
+  "theme_color": "#004A7F"
+}
